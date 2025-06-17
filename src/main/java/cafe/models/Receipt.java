@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Receipt {
     private final int id;
-    private final String date;
+    private final Date date;
     private final double totalAmount;
     private final Map<Food, Integer> foodItems;
 
-    public Receipt(int id, String date, double totalAmount, Map<Food, Integer> foodItems) {
+    public Receipt(int id, Date date, double totalAmount, Map<Food, Integer> foodItems) {
         this.id = id;
         this.date = date;
         this.totalAmount = totalAmount;
@@ -19,7 +19,7 @@ public class Receipt {
         return id;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
